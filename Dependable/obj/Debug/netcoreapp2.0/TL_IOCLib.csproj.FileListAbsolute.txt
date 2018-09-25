@@ -1,0 +1,9 @@
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\bin\Debug\netcoreapp2.0\TL_IOCLib.deps.json
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\bin\Debug\netcoreapp2.0\TL_IOCLib.dll
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\bin\Debug\netcoreapp2.0\TL_IOCLib.pdb
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\TL_IOCLib.csprojAssemblyReference.cache
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\TL_IOCLib.csproj.CoreCompileInputs.cache
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\TL_IOCLib.AssemblyInfoInputs.cache
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\TL_IOCLib.AssemblyInfo.cs
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\TL_IOCLib.dll
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\TL_IOCLib.pdb

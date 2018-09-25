@@ -1,0 +1,17 @@
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\Dependable.csprojAssemblyReference.cache
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\Dependable.csproj.CoreCompileInputs.cache
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\Dependable.AssemblyInfoInputs.cache
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\Dependable.AssemblyInfo.cs
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\bin\Debug\netcoreapp2.0\Dependable.deps.json
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\bin\Debug\netcoreapp2.0\Dependable.dll
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\bin\Debug\netcoreapp2.0\Dependable.pdb
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\Dependable.dll
+E:\CodingExercises\TL_IOCLib\TL_IOCLib\obj\Debug\netcoreapp2.0\Dependable.pdb
+E:\CodingExercises\Dependable\Dependable\bin\Debug\netcoreapp2.0\Dependable.deps.json
+E:\CodingExercises\Dependable\Dependable\bin\Debug\netcoreapp2.0\Dependable.dll
+E:\CodingExercises\Dependable\Dependable\bin\Debug\netcoreapp2.0\Dependable.pdb
+E:\CodingExercises\Dependable\Dependable\obj\Debug\netcoreapp2.0\Dependable.csproj.CoreCompileInputs.cache
+E:\CodingExercises\Dependable\Dependable\obj\Debug\netcoreapp2.0\Dependable.AssemblyInfoInputs.cache
+E:\CodingExercises\Dependable\Dependable\obj\Debug\netcoreapp2.0\Dependable.AssemblyInfo.cs
+E:\CodingExercises\Dependable\Dependable\obj\Debug\netcoreapp2.0\Dependable.dll
+E:\CodingExercises\Dependable\Dependable\obj\Debug\netcoreapp2.0\Dependable.pdb
