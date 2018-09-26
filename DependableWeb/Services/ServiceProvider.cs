@@ -23,8 +23,12 @@ namespace DependableWebCore.Services
 			var Types = GetResolvableTypes();
 			foreach(var t in Types)
 			{
-				var res = Resolve(t);
-				services.AddTransient(t, res.GetType());
+				var instType = GetResolvedType(t);
+				var LifeCycle = GetLifeCycle(t);
+				if (LifeCycle == LifeCycle.Transient)
+					services.AddTransient(t, instType);
+				else if (LifeCycle == LifeCycle.Singleton)
+					services.AddSingleton(t, instType);
 			}
 			
 		}

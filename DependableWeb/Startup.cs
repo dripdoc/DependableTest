@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ControllerDI.Services;
+using Dependable.Lib;
 using DependableWeb.Interfaces;
 using DependableWebCore.Services;
 using Microsoft.AspNetCore.Builder;
@@ -28,7 +29,7 @@ namespace DependableWeb
 			services.AddMvc();
 			//services.AddTransient<IDateTime, SystemDateTime>();
 			dependableServiceProvider = new DependableServiceProvider();
-			dependableServiceProvider.Register<IDateTime, SystemDateTime>();
+			dependableServiceProvider.Register<IDateTime, SystemDateTime>(LifeCycle.Singleton);
 			dependableServiceProvider.Build(services);
 
 			//dependableServiceProvider.Register<Interfaces.IDateTime, SystemDateTime>();

@@ -8,12 +8,12 @@ namespace Dependable.Lib
 {
 	public class DependableContainer
 	{
-		ConcurrentDictionary<Type, Func<object>> _registeredFunc;
+		ConcurrentDictionary<Type, TypeInfo> _registeredFunc;
 		ConcurrentDictionary<Type, object> _singletonInstances;
 		TransientCreator transientCreator;
 		public DependableContainer()
 		{
-			_registeredFunc = new ConcurrentDictionary<Type, Func<object>>();
+			_registeredFunc = new ConcurrentDictionary<Type, TypeInfo>();
 			_singletonInstances = new ConcurrentDictionary<Type, object>();
 			transientCreator = new TransientCreator();
 		}
@@ -32,23 +32,26 @@ namespace Dependable.Lib
 				throw new ArgumentException($"ConstructorCount:Type {inst.FullName} does not have exactly one public constructor");
 			}
 
-			Func<object> f = null;
+			TypeInfo typeInfo = new TypeInfo();
 			switch (lifeCycle)
 			{
 				case LifeCycle.Transient:
 					{
-						f = transientCreator.makeCreationFunc(constructors, this);
+						typeInfo.Func = transientCreator.makeCreationFunc(constructors, this);
+						typeInfo.LifeCycle = LifeCycle.Transient;
+						typeInfo.Type = inst;
 						break;
 					}
 				case LifeCycle.Singleton:
 					{
-						f = MakeSingletonFunc(intf, constructors);
+						typeInfo.Func = MakeSingletonFunc(intf, constructors); ; 
+						typeInfo.LifeCycle = LifeCycle.Singleton;
+						typeInfo.Type = inst;
 						break;
 					}
 					throw new ArgumentException($"LifeCyle {lifeCycle.ToString()} not implemented");
 			}
-
-			_registeredFunc.GetOrAdd(intf, f);
+			_registeredFunc.GetOrAdd(intf, typeInfo);
 
 		}
 
@@ -63,7 +66,6 @@ namespace Dependable.Lib
 				var inst = transientCreator.makeCreationFunc(constructors, this).Invoke();
 				_singletonInstances.GetOrAdd(intf, inst);
 				return inst;
-
 			};
 		}
 
@@ -75,16 +77,28 @@ namespace Dependable.Lib
 		public object Resolve(Type t)
 		{
 			if (_registeredFunc.ContainsKey(t))
-				return _registeredFunc[t].Invoke();
+				return _registeredFunc[t].Func.Invoke();
 			throw new Exception($"NotRegistered: Register<{t.FullName}>() must be called before calling resolve");
 		}
+
 		protected bool CanResolve(Type t)
 		{
 			return _registeredFunc.ContainsKey(t);
 		}
+
 		protected Type[] GetResolvableTypes()
 		{
 			return _registeredFunc.Keys.ToArray();
 		}
+
+		protected Type GetResolvedType(Type t)
+		{
+			return _registeredFunc[t].Type;
+		}
+		protected LifeCycle GetLifeCycle(Type t)
+		{
+			return _registeredFunc[t].LifeCycle;
+		}
+
 	}
 }
