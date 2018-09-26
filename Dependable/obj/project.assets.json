@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CodingExercises\\Dependable\\Dependable\\Dependable.csproj",
+      "projectUniqueName": "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\Dependable.csproj",
       "projectName": "Dependable",
-      "projectPath": "E:\\CodingExercises\\Dependable\\Dependable\\Dependable.csproj",
+      "projectPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\Dependable.csproj",
       "packagesPath": "C:\\Users\\leaket\\.nuget\\packages\\",
-      "outputPath": "E:\\CodingExercises\\Dependable\\Dependable\\obj\\",
+      "outputPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -5735,11 +5735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CodingExercises\\Dependable\\DependableTest\\Dependable.Tests.csproj",
+      "projectUniqueName": "E:\\CodingExercises\\DependableCore\\DependableTest\\DependableTest\\Dependable.Tests.csproj",
       "projectName": "Dependable.Tests",
-      "projectPath": "E:\\CodingExercises\\Dependable\\DependableTest\\Dependable.Tests.csproj",
+      "projectPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\DependableTest\\Dependable.Tests.csproj",
       "packagesPath": "C:\\Users\\leaket\\.nuget\\packages\\",
-      "outputPath": "E:\\CodingExercises\\Dependable\\DependableTest\\obj\\",
+      "outputPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\DependableTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5758,8 +5758,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\CodingExercises\\Dependable\\Dependable\\Dependable.csproj": {
-              "projectPath": "E:\\CodingExercises\\Dependable\\Dependable\\Dependable.csproj"
+            "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\Dependable.csproj": {
+              "projectPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\Dependable.csproj"
             }
           }
         }

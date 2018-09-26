@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Dependable.Lib
 {
@@ -71,11 +72,19 @@ namespace Dependable.Lib
 			Type t = typeof(T);
 			return Resolve(t);
 		}
-		internal object Resolve(Type t)
+		public object Resolve(Type t)
 		{
 			if (_registeredFunc.ContainsKey(t))
 				return _registeredFunc[t].Invoke();
 			throw new Exception($"NotRegistered: Register<{t.FullName}>() must be called before calling resolve");
+		}
+		protected bool CanResolve(Type t)
+		{
+			return _registeredFunc.ContainsKey(t);
+		}
+		protected Type[] GetResolvableTypes()
+		{
+			return _registeredFunc.Keys.ToArray();
 		}
 	}
 }

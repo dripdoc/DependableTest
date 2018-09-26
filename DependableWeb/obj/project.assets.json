@@ -4746,6 +4746,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Dependable/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Dependable.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dependable.dll": {}
+        }
       }
     }
   },
@@ -12653,10 +12663,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Dependable/1.0.0": {
+      "type": "project",
+      "path": "../Dependable/Dependable.csproj",
+      "msbuildProject": "../Dependable/Dependable.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Dependable >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12668,11 +12684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CodingExercises\\Dependable\\DependableWeb\\DependableWeb.csproj",
-      "projectName": "DependableWeb",
-      "projectPath": "E:\\CodingExercises\\Dependable\\DependableWeb\\DependableWeb.csproj",
+      "projectUniqueName": "E:\\CodingExercises\\DependableCore\\DependableTest\\DependableWeb\\DependableWebCore.csproj",
+      "projectName": "DependableWebCore",
+      "projectPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\DependableWeb\\DependableWebCore.csproj",
       "packagesPath": "C:\\Users\\leaket\\.nuget\\packages\\",
-      "outputPath": "E:\\CodingExercises\\Dependable\\DependableWeb\\obj\\",
+      "outputPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\DependableWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12690,7 +12706,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\Dependable.csproj": {
+              "projectPath": "E:\\CodingExercises\\DependableCore\\DependableTest\\Dependable\\Dependable.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
